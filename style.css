@@ -26,9 +26,9 @@
     font-family: Raleway, sans-serif;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1600px){
     html {
-        font-size: 62.5%;
+        font-size: 70%;
     }
 }
 
@@ -45,6 +45,12 @@ body {
     max-width: 170rem;
     display: flex;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1600px){
+    .content{
+        max-width: 140rem;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -140,9 +146,45 @@ header .content button img{
     margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1600px){
+
+    header{
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+    }
+
+    header .content{
+        display: flex;
+        justify-content: center;
+    }
+
+    header .content ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    header .content ul li{
+        display: flex;
+        justify-content: center;
+    }
+
     header .content button{
-        visibility: hidden;
+        width: 11rem;
+        left: -2rem;
+    }
+
+    header .content button img{
+        width: 11rem;
+    }
+
+    header .content ul li a{
+        font-size: 1rem;
+    }
+
+    header .content ul li #contactBtn{
+        padding: 0.4rem;
+        padding-inline: 1rem;
     }
 }
 
@@ -230,6 +272,25 @@ header .content button img{
 
 .banner .content .text h1 a:hover::before{
     width: 100%;
+}
+
+@media screen and (max-width: 1600px){
+    .banner{
+        height: 85vh;
+    }
+
+    .banner .content{
+        gap: 5rem;
+    }
+
+    .banner .content button{
+        height: 6rem;
+        font-size: 2rem;
+    }
+
+    .banner .content .text h1{
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -457,6 +518,61 @@ header .content button img{
     background-color: var(--orange-dark-color);
 }
 
+@media screen and (max-width: 1600px){
+
+    .modalities{
+        margin-top: 9rem;
+    }
+
+    .modalities h1{
+        font-size: 5rem;
+    }
+
+    .modalities h2{
+        font-size: 5rem;
+        margin-bottom: 9rem;
+    }
+
+    .modalities .cards{
+        gap: 5rem;
+        margin-bottom: 17rem;
+    }
+
+    .modalities .cards .card{
+        width: 23rem;
+    }
+
+    .modalities .cards .card p{
+        font-size: 1.5rem;
+    }
+
+    .modalities .cards .card h1{
+        font-size: 3rem;
+    }
+
+    /* === DescBox === */
+
+    .desc_box{
+        max-height: 40rem;
+        max-width: 57rem;
+        gap: 2rem;
+    }
+
+    .desc_box h1{
+        font-size: 4rem;
+        max-width: 30rem;
+    }
+
+    .desc_box p{
+        font-size: 2rem;
+    }
+
+    .desc_box button{
+        top: 6rem;
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .modalities{
@@ -606,48 +722,25 @@ header .content button img{
     position: relative;
     color: white;
     font-size: 10rem;
-    cursor: pointer;
     transition: ease-in-out 0.2s;
 }
 
-.units .content ion-icon:hover{
-    transform: scale(1.2);
-}
+@media screen and (max-width: 1600px){
+    .units{
+        height: 20rem;
+    }
 
-.mapBox{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1rem;
-    transition: all ease-in-out 0.3s;
-    color: var(--black-color);
-    opacity: 0;
-    z-index: 100001;
-}
+    .units .content .text h1{
+        font-size: 6rem;
+    }
 
-.mapExitButton{
-    position: absolute;
-    display: flex;
-    top: -80%;
-    left: 58%;
-    font-size: 2.5rem;
-    padding: 1rem;
-    background: var(--orange-color);
-    font-family: kanit;
-    font-weight: bold;
-    color: white;
-    outline: none;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all linear 0.1s;
-    opacity: 0;
-    z-index: 100002;
-}
+    .units .content .text h2{
+        font-size: 6rem;    
+    }
 
-.mapExitButton:hover{
-    background-color: var(--orange-dark-color);
+    .units .content ion-icon{
+        font-size: 6rem;
+    }
 }
 
 @media screen and (max-width: 600px){
