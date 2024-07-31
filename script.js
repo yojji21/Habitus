@@ -24,10 +24,17 @@ card1.addEventListener("click", () => {
 
     
     const exitButton = document.createElement("button")
-    exitButton.innerHTML = `
-    <span>Fechar</span>
-    `
 
+    if (window.innerWidth <= 600) {
+        exitButton.innerHTML = `
+        <span>x</span>
+        `
+      } else {
+        exitButton.innerHTML = `
+        <span>Fechar</span>
+        `
+    }
+      
     setTimeout(() => {
         descBox.style.width = "80rem"
         descBox.style.height = "70rem"
@@ -73,7 +80,7 @@ card1.addEventListener("click", () => {
 
 card2.addEventListener("click", () => {
     const h1 = card2.querySelector("h1")
-    const description = "O spinning é uma modalidade de exercício aeróbico realizada em bicicletas estacionárias, frequentemente em grupo e acompanhada por música motivacional. As aulas são guiadas por um instrutor que varia a intensidade, simulando subidas, descidas e sprints. É eficaz para melhorar a resistência cardiovascular, queimar calorias e fortalecer os músculos das pernas."
+    const description = "O spinning é uma modalidade de exercício aeróbico realizada em bicicletas estacionárias, frequentemente em grupo e acompanhada por música motivacional. É eficaz para melhorar a resistência cardiovascular, queimar calorias e fortalecer os músculos das pernas."
 
 
     const desc = document.createElement("p")
@@ -86,9 +93,15 @@ card2.addEventListener("click", () => {
     unClickableBack.classList.add("unclickabe")
 
     const exitButton = document.createElement("button")
-    exitButton.innerHTML = `
-    <span>Fechar</span>
-    `
+    if (window.innerWidth <= 600) {
+        exitButton.innerHTML = `
+        <span>x</span>
+        `
+      } else {
+        exitButton.innerHTML = `
+        <span>Fechar</span>
+        `
+    }
 
     setTimeout(() => {
         descBox.style.width = "80rem"
@@ -135,7 +148,7 @@ card2.addEventListener("click", () => {
 
 card3.addEventListener("click", () => {
     const h1 = card3.querySelector("h1")
-    const description = "FitDance é uma modalidade de dança fitness que combina diversos estilos musicais e coreografias dinâmicas para proporcionar um treino divertido e eficaz. As aulas são realizadas em grupo, seguindo a orientação de um instrutor, promovendo a queima de calorias, a melhora da coordenação motora e o bem-estar geral. É uma atividade inclusiva, voltada para pessoas de todas as idades e níveis de condicionamento físico."
+    const description = "FitDance é uma modalidade de dança fitness que combina diversos estilos musicais e coreografias dinâmicas para proporcionar um treino divertido e eficaz. As aulas são realizadas em grupo, seguindo a orientação de um instrutor, promovendo a queima de calorias, a melhora da coordenação motora e o bem-estar geral."
 
 
     const desc = document.createElement("p")
@@ -148,9 +161,15 @@ card3.addEventListener("click", () => {
     unClickableBack.classList.add("unclickabe")
 
     const exitButton = document.createElement("button")
-    exitButton.innerHTML = `
-    <span>Fechar</span>
-    `
+    if (window.innerWidth <= 600) {
+        exitButton.innerHTML = `
+        <span>x</span>
+        `
+      } else {
+        exitButton.innerHTML = `
+        <span>Fechar</span>
+        `
+    }
 
     setTimeout(() => {
         descBox.style.width = "80rem"
@@ -210,9 +229,15 @@ card4.addEventListener("click", () => {
     unClickableBack.classList.add("unclickabe")
 
     const exitButton = document.createElement("button")
-    exitButton.innerHTML = `
-    <span>Fechar</span>
-    `
+    if (window.innerWidth <= 600) {
+        exitButton.innerHTML = `
+        <span>x</span>
+        `
+      } else {
+        exitButton.innerHTML = `
+        <span>Fechar</span>
+        `
+    }
 
     setTimeout(() => {
         descBox.style.width = "80rem"
@@ -256,3 +281,58 @@ card4.addEventListener("click", () => {
         }, 200)
     })
 })
+
+
+// Locations Scripts
+
+const mapBtn = document.querySelector("#mapBtn")
+const unitsSection = document.querySelector(".units")
+
+mapBtn.addEventListener("click", () => {
+    const mapMessage = document.createElement("div")
+    const mapBox = document.createElement("ion-icon")
+    const exitBtn = document.createElement("button")
+
+    exitBtn.classList.add("mapExitButton")
+    exitBtn.textContent = "Fechar"
+
+    mapBox.setAttribute("name", "chatbox")
+    mapBox.classList.add("mapBox")
+
+    const unClickableBack = document.createElement("div")
+    unClickableBack.classList.add("unclickabe")
+
+    setTimeout(() => {
+        exitBtn.style.opacity = "1"
+    }, 300)
+
+    setTimeout(() => {
+        mapBox.style.fontSize = "70rem"
+        mapBox.style.top = "-30%"
+        mapBox.style.opacity = "1"
+    }, 1)
+
+    mapMessage.appendChild(mapBox)
+    mapMessage.appendChild(exitBtn)
+
+    unitsSection.appendChild(mapMessage)
+
+    html.appendChild(unClickableBack)
+
+    exitBtn.addEventListener("click", () => {
+
+        mapBox.style.fontSize = "0rem"
+        mapBox.style.top = "50%"
+        exitBtn.style.display = "none"
+
+        mapBox.style.opacity = "0"
+
+        setTimeout(() => {
+            mapMessage.remove()
+            unClickableBack.remove()
+        }, 200)  
+    })
+
+})
+
+

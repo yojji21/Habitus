@@ -26,11 +26,15 @@
     font-family: Raleway, sans-serif;
 }
 
-html {
-    font-size: 62.5%;
+@media screen and (max-width: 1000px){
+    html {
+        font-size: 62.5%;
+    }
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     background: var(--background-color);
 }
@@ -41,6 +45,12 @@ body {
     max-width: 170rem;
     display: flex;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 600px){
+    .content{
+        max-width: 500px;
+    }
 }
 
 section {
@@ -165,6 +175,7 @@ header .content button img{
 .banner .content{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 12rem;
 }
 
@@ -192,8 +203,8 @@ header .content button img{
     cursor: pointer;
     transform: translateY(-1rem);
     background-color: #ff832a;
-
-box-shadow: 0em 0em 1em black;}
+    box-shadow: 0em 0em 1em black;
+}
 
 .banner .content .text h1{
     font-size: 5rem;
@@ -221,6 +232,54 @@ box-shadow: 0em 0em 1em black;}
     width: 100%;
 }
 
+@media screen and (max-width: 600px){
+
+    .banner .content{
+        gap: 9rem;
+    }
+
+    .banner .content .text{
+        text-align: center;
+    }
+
+    .banner .content .text h1{
+        font-size: 3rem;
+    }
+
+    .banner .content .text h1 a{
+        font-size: 3rem;
+    }
+
+    .banner .content button{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .banner{
+        height: 70rem;
+    }
+
+    .banner .content{
+        gap: 5rem;
+    }
+    
+    .banner .content .text h1{
+        font-size: 3rem;
+    }
+
+    .banner .content .text h1 a{
+        font-size: 3rem;
+    }
+
+    .banner .content button{
+        height: 6rem;
+        font-size: 2rem;
+    }
+}
+
 /* === Modalities === */
 
 .modalities{
@@ -235,6 +294,7 @@ box-shadow: 0em 0em 1em black;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 160rem;
 }
 
 .modalities h1{
@@ -258,7 +318,6 @@ box-shadow: 0em 0em 1em black;}
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 40rem;
     gap: 10rem;
     margin-bottom: 30rem;
 }
@@ -282,7 +341,7 @@ box-shadow: 0em 0em 1em black;}
 
 .modalities .cards .card{
     position: relative;
-    width: 35rem;
+    width: 32rem;
     height: 43,7rem;
     text-align: center;
     transition: all linear 0.2s;
@@ -396,4 +455,224 @@ box-shadow: 0em 0em 1em black;}
 
 .desc_box button:hover{
     background-color: var(--orange-dark-color);
+}
+
+@media screen and (max-width: 600px) {
+
+    .modalities{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalities h1{
+        font-size: 5rem;
+    }
+
+    .modalities h2{
+        font-size: 5rem;
+    }
+
+    .modalities .cards{
+        gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    .modalities .cards .card{
+        width: 20rem;
+    }
+
+    .modalities .cards .card h1{
+        font-size: 2.5rem;
+    }
+
+    /* DescBox */
+
+    .desc_box{
+        max-width: 40rem;
+        max-height: 70rem;
+    }
+
+    .desc_box h1{
+        font-size: 3rem;
+        max-width: 25rem;
+    }
+
+    .desc_box p{
+        font-size: 2.5rem;
+    }
+
+    .desc_box button{
+        padding: 1rem;
+        font-size: 2rem;
+        width: 4rem;
+        height: 4rem;
+        top: 5.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desc_box button span{
+        position: relative;
+        top: -0.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .modalities{
+        margin-top: 5rem;
+    }
+
+    .modalities h1{
+        font-size: 4rem;
+    }
+
+    .modalities h2{
+        font-size: 4rem;
+    }
+
+    .modalities .cards{
+        margin-top: -4rem;
+        gap: 5rem;
+    }
+
+    .modalities .cards .card{
+        width: 25rem;
+    }
+
+    /* DescBox */
+
+    .desc_box{
+        max-width: 35rem;
+        max-height: 60rem;
+    }
+
+    .desc_box h1{
+        font-size: 2.5rem;
+        max-width: 20rem;
+    }
+
+    .desc_box p{
+        font-size: 2.2rem;
+    }
+}
+
+/* === Units === */
+
+.units{
+    position: relative;
+    background: var(--orange-color);
+    width: 100%;
+    height: 45rem;
+}
+
+.units .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.units .content .text{
+    display: flex;
+}
+
+.units .content .text h1{
+    font-size: 10rem;
+    font-family: kanit;
+    color: white;
+}
+
+.units .content .text h1::first-letter{
+    margin-left: 2rem;
+}
+
+
+.units .content .text h2{
+    font-size: 10rem;
+    font-family: kanit;
+    color: var(--black-color);
+}
+
+.units .content .text h2::first-letter{
+    margin-left: 2rem;
+}
+
+.units .content ion-icon{
+    position: relative;
+    color: white;
+    font-size: 10rem;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.units .content ion-icon:hover{
+    transform: scale(1.2);
+}
+
+.mapBox{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    transition: all ease-in-out 0.3s;
+    color: var(--black-color);
+    opacity: 0;
+    z-index: 100001;
+}
+
+.mapExitButton{
+    position: absolute;
+    display: flex;
+    top: -80%;
+    left: 58%;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background: var(--orange-color);
+    font-family: kanit;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all linear 0.1s;
+    opacity: 0;
+    z-index: 100002;
+}
+
+.mapExitButton:hover{
+    background-color: var(--orange-dark-color);
+}
+
+@media screen and (max-width: 600px){
+
+    .units{
+        height: 30rem;
+    }
+
+    .units .content{
+        max-width: 30rem;
+    }
+
+    .units .content .text h1{
+        font-size: 5rem;
+    }
+    .units .content .text h2{
+        display: none;
+    }
+    .units .content .text ion-icon{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .units{
+        height: 20rem;
+    }
 }
