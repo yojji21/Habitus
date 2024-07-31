@@ -282,4 +282,53 @@ card4.addEventListener("click", () => {
     })
 })
 
+// Menu Button Scripts
 
+const lowerMenu = document.querySelector(".lowerMenu")
+const menuBtn = document.querySelector(".menuBtn")
+const menu = document.querySelector(".menu")
+
+
+menuBtn.addEventListener("click", () => {
+
+    if(window.innerWidth < 1800){
+        const list = document.querySelector("#list")
+
+        if(menu.style.display === "flex"){
+            menuBtn.innerHTML = `
+            <span><ion-icon name="menu-outline"></ion-icon></span>
+            `
+            setTimeout(() => {
+                menu.style.display = "none"
+            }, 300)
+
+            menu.style.maxWidth = "0vw"
+            menu.style.maxHeight = "0vh"
+            menu.style.padding = "0"
+            menu.style.top = "5px"
+            menu.style.right = "5px"
+            list.style.opacity = "0"
+
+    
+
+        } else {
+
+            menuBtn.innerHTML = `
+            <span><ion-icon name="close-outline"></ion-icon></span>
+            `
+
+            menu.style.display = "flex"
+
+            setTimeout(() => {
+
+            menu.style.maxWidth = "60vw"
+            menu.style.maxHeight = "40vh"
+            menu.style.padding = "2rem"
+            menu.style.top = "0px"
+            menu.style.right = "0px"
+            list.style.opacity = "1"
+
+            }, 2)
+        }
+    }
+})

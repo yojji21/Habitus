@@ -73,6 +73,88 @@ a {
 
 /* === Header Styles === */
 
+.lowerMenu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2rem;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10000;
+}
+
+.menuBtn{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    right: 2rem;
+    width: 15vw;
+    height: 15vw;
+    max-width: 5rem;
+    max-height: 5rem;
+    border: none;
+    outline: none;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.menuBtn ion-icon{
+    position: relative;
+    font-size: 3rem;
+    top: -0.1rem;
+    color: white;
+}
+
+.menu{
+    position: absolute;
+    background-color: var(--orange-color);
+    top: 5px;
+    right: 5px;
+    padding: 0rem;
+    padding-block: 4rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 0vh;
+    max-width: 0vw;
+    border-radius: 2rem;
+    box-shadow: 0em 0em 1em black;
+    transition: all linear 0.4s;
+    gap: 1rem;
+}
+
+
+.menu ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+
+.menu ul li a{
+    font-size: 2rem;
+    color: white;
+    font-family: raleway;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu il li a ion-icon{
+    color: white;
+}
+
 header{
     position: fixed;
     width: 100vw;
@@ -127,8 +209,8 @@ header .content ul li svg{
     width: 2rem;
 }
 
-header .content button{
-    position: absolute;
+#logoBtn{
+    position: fixed;
     background: white;
     left: 3rem;
     top: 0rem;
@@ -136,9 +218,10 @@ header .content button{
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 100000;
 }
 
-header .content button img{
+#logoBtn img{
     position: absolute;
     left: 3rem;
     top: -0rem;
@@ -146,45 +229,49 @@ header .content button img{
     margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1800px){
+
+    .menuBtn{
+        display: flex;
+    }
+
+    .menu{
+        display: flex;
+    }
 
     header{
-        display: flex;
-        justify-content: center;
-        height: 5rem;
+        display: none;
     }
 
     header .content{
-        display: flex;
-        justify-content: center;
+        display: none;
     }
 
-    header .content ul{
-        display: flex;
-        justify-content: center;
+    #logoBtn{
+        position: absolute;
+        background: white;
+        left: -1rem;
+        top: 2rem;
+        width: 30vw;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 100000;
     }
-
-    header .content ul li{
-        display: flex;
-        justify-content: center;
+    
+    #logoBtn img{
+        position: absolute;
+        left: 3rem;
+        top: 0rem;
+        width: 30vw;
+        max-width: 20rem;
+        margin-top: 0.5rem;
     }
+}
 
-    header .content button{
-        width: 11rem;
-        left: -2rem;
-    }
-
-    header .content button img{
-        width: 11rem;
-    }
-
-    header .content ul li a{
-        font-size: 1rem;
-    }
-
-    header .content ul li #contactBtn{
-        padding: 0.4rem;
-        padding-inline: 1rem;
+@media screen and (max-width: 950px){
+    header{
+        display: none;
     }
 }
 
@@ -274,6 +361,12 @@ header .content button img{
     width: 100%;
 }
 
+@media screen and (max-width: 2000px){
+    .banner{
+        height: 80vh;
+    }
+}
+
 @media screen and (max-width: 1600px){
     .banner{
         height: 85vh;
@@ -290,6 +383,12 @@ header .content button img{
 
     .banner .content .text h1{
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .banner{
+        height: 90vh;
     }
 }
 
@@ -636,7 +735,7 @@ header .content button img{
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 
     .modalities{
         margin-top: 5rem;
@@ -662,17 +761,17 @@ header .content button img{
     /* DescBox */
 
     .desc_box{
-        max-width: 35rem;
+        max-width: 30rem;
         max-height: 60rem;
     }
 
     .desc_box h1{
         font-size: 2.5rem;
-        max-width: 20rem;
+        max-width: 10rem;
     }
 
     .desc_box p{
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
 }
 
