@@ -26,11 +26,12 @@
     font-family: Raleway, sans-serif;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 2000px){
     html {
-        font-size: 70%;
+        font-size: 62.5%;
     }
 }
+
 
 body {
     display: flex;
@@ -78,9 +79,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 2rem;
-    top: 2rem;
-    right: 2rem;
+    right: 0rem;
     z-index: 10000;
 }
 
@@ -96,7 +95,7 @@ a {
     max-height: 5rem;
     border: none;
     outline: none;
-    background-color: var(--orange-color);
+    background: none;
     border-radius: 50%;
     z-index: 10000;
 }
@@ -110,19 +109,16 @@ a {
 
 .menu{
     position: absolute;
-    background-color: var(--orange-color);
-    top: 5px;
-    right: 5px;
-    padding: 0rem;
-    padding-block: 4rem;
     display: none;
+    background-color: #f48434fa;
+    top: 0rem;
+    right: 0rem;
+    min-width: 0vw;
+    min-height: 0vh;
+    padding: 0rem;
     flex-direction: column;
     align-items: flex-start;
-    max-height: 0vh;
-    max-width: 0vw;
-    border-radius: 2rem;
     box-shadow: 0em 0em 1em black;
-    transition: all linear 0.4s;
     gap: 1rem;
 }
 
@@ -133,11 +129,9 @@ a {
 }
 
 .menu ul{
-    display: flex;
+    display: none;
     flex-direction: column;
-    gap: 0.8rem;
-    opacity: 0;
-    transition: all linear 0.4s;
+    gap: 2rem;
 }
 
 
@@ -161,8 +155,9 @@ header{
     height: 9rem;
     background-color: black;
     display: flex;
+    padding-right: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     z-index: 10000;
 }
 
@@ -212,7 +207,7 @@ header .content ul li svg{
 #logoBtn{
     position: fixed;
     background: white;
-    left: 3rem;
+    left: 0rem;
     top: 0rem;
     width: 25rem;
     border: none;
@@ -224,12 +219,12 @@ header .content ul li svg{
 #logoBtn img{
     position: absolute;
     left: 3rem;
-    top: -0rem;
+    top: 0rem;
     width: 25rem;
     margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1800px){
+@media screen and (max-width: 1100px){
 
     .menuBtn{
         display: flex;
@@ -251,7 +246,7 @@ header .content ul li svg{
         position: absolute;
         background: white;
         left: -1rem;
-        top: 2rem;
+        top: rem;
         width: 30vw;
         border: none;
         outline: none;
@@ -275,12 +270,13 @@ header .content ul li svg{
     }
 }
 
+
 /* === Banner Styles === */
 
-.banner{
+.banner{ 
     position: relative;
     top: 0rem;
-    height: 55vh;
+    min-height: 90vh;
     background-color: rgb(0, 0, 0);
     background-image: url("images/banner\ image.png");
     background-position: center;
@@ -303,9 +299,11 @@ header .content ul li svg{
 
 .banner .content{
     display: flex;
+    max-width: 180rem;
     flex-direction: column;
     justify-content: center;
-    gap: 12rem;
+    align-items: center;
+    gap: 8rem;
 }
 
 .banner .content .text{
@@ -313,7 +311,7 @@ header .content ul li svg{
 }
 
 .banner .content button{
-    width: 100%;
+    width: 80%;
     height: 10rem;
     border: none;
     outline: none;
@@ -361,85 +359,25 @@ header .content ul li svg{
     width: 100%;
 }
 
-@media screen and (max-width: 2000px){
-    .banner{
-        height: 80vh;
+@media screen and (max-width:550px){
+    .banner .content .text h1{
+        font-size: 4rem;
+    }
+    .banner .content button{
+        font-size: 2rem;
     }
 }
 
-@media screen and (max-width: 1600px){
-    .banner{
-        height: 85vh;
-    }
+@media screen and (max-width:350px){
 
     .banner .content{
         gap: 5rem;
     }
 
-    .banner .content button{
-        height: 6rem;
-        font-size: 2rem;
-    }
-
     .banner .content .text h1{
         font-size: 3rem;
     }
 }
-
-@media screen and (max-width: 950px){
-    .banner{
-        height: 90vh;
-    }
-}
-
-@media screen and (max-width: 600px){
-
-    .banner .content{
-        gap: 9rem;
-    }
-
-    .banner .content .text{
-        text-align: center;
-    }
-
-    .banner .content .text h1{
-        font-size: 3rem;
-    }
-
-    .banner .content .text h1 a{
-        font-size: 3rem;
-    }
-
-    .banner .content button{
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 400px){
-
-    .banner{
-        height: 70rem;
-    }
-
-    .banner .content{
-        gap: 5rem;
-    }
-    
-    .banner .content .text h1{
-        font-size: 3rem;
-    }
-
-    .banner .content .text h1 a{
-        font-size: 3rem;
-    }
-
-    .banner .content button{
-        height: 6rem;
-        font-size: 2rem;
-    }
-}
-
 /* === Modalities === */
 
 .modalities{
@@ -505,6 +443,10 @@ header .content ul li svg{
     height: 43,7rem;
     text-align: center;
     transition: all linear 0.2s;
+}
+
+.modalities .cards .card #descCard{
+    display: none;
 }
 
 .modalities .cards .card img{
@@ -616,7 +558,6 @@ header .content ul li svg{
 .desc_box button:hover{
     background-color: var(--orange-dark-color);
 }
-
 @media screen and (max-width: 1600px){
 
     .modalities{
@@ -779,9 +720,9 @@ header .content ul li svg{
 
 .units{
     position: relative;
-    background: var(--orange-color);
-    width: 100%;
-    height: 45rem;
+    width: 100vw;
+    height: 30rem;
+    background-color: var(--orange-color);
 }
 
 .units .content{
@@ -790,10 +731,12 @@ header .content ul li svg{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--orange-color);
 }
 
 .units .content .text{
     display: flex;
+    justify-content: center;
 }
 
 .units .content .text h1{
@@ -803,9 +746,8 @@ header .content ul li svg{
 }
 
 .units .content .text h1::first-letter{
-    margin-left: 2rem;
+    margin-left:2rem;
 }
-
 
 .units .content .text h2{
     font-size: 10rem;
@@ -824,47 +766,52 @@ header .content ul li svg{
     transition: ease-in-out 0.2s;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1100px){
     .units{
-        height: 20rem;
-    }
-
-    .units .content .text h1{
-        font-size: 6rem;
-    }
-
-    .units .content .text h2{
-        font-size: 6rem;    
-    }
-
-    .units .content ion-icon{
-        font-size: 6rem;
+        max-height: 25rem;
     }
 }
 
-@media screen and (max-width: 600px){
-
-    .units{
-        height: 30rem;
-    }
-
-    .units .content{
-        max-width: 30rem;
-    }
-
-    .units .content .text h1{
-        font-size: 5rem;
-    }
-    .units .content .text h2{
+@media screen and (max-width:800px){
+    .units .content ion-icon{
         display: none;
     }
-    .units .content .text ion-icon{
-        font-size: 5rem;
+
+    .units .content .text h1{
+        font-size: 7rem;
+    }
+
+    .units .content .text h2{
+        font-size: 7rem;
+    }
+
+    .units .content .text h1::first-letter{
+        margin-left: 2rem;
+    }
+
+    .units .content .text h2::first-letter{
+        margin-left: 0;
     }
 }
 
-@media screen and (max-width: 400px){
-    .units{
-        height: 20rem;
+@media screen and (max-width: 500px){
+
+    .units .text{
+        flex-direction: column;
+    }
+
+    .units .content .text h1{
+        font-size: 6rem;
+    }
+
+    .units .content .text h2{
+        font-size: 6rem;
+    }
+
+    .units .content .text h1::first-letter{
+        margin-left: 0;
     }
 }
+
+/* === Doubts === */
+
