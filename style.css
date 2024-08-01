@@ -26,6 +26,10 @@
     font-family: Raleway, sans-serif;
 }
 
+html {
+    font-size: 80%;
+}
+
 @media screen and (max-width: 2000px){
     html {
         font-size: 62.5%;
