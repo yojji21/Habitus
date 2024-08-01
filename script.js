@@ -109,3 +109,45 @@ menuBtn.addEventListener("click", () => {
             logoBtn.style.display = "none"
     }
 })
+
+// Doubts Scripts
+
+    const allDoubts = document.querySelectorAll(".doubt")
+
+    allDoubts.forEach(doubt => {
+
+        const question = doubt.querySelector(".question")
+
+        question.addEventListener("click", () => {     
+                const button = question.querySelector("button")
+                const answer = doubt.querySelector(".answer_box")
+                const p = answer.querySelector("p")
+                if(answer.style.display === "flex"){
+                    button.innerHTML = `
+                    <span><ion-icon name="caret-back-outline"></ion-icon></span>
+                    `
+                    setTimeout(() => {
+                        answer.style.display = "none"
+                    }, 300)
+                    
+                    answer.style.padding = "0rem"
+                    answer.style.maxHeight = "0rem"
+
+                    p.style.opacity = "0"
+
+                } else {
+                    button.innerHTML = `
+                    <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                    `
+
+                    answer.style.display = "flex"
+
+                    setTimeout(() => {
+                        answer.style.padding = "3rem"
+                        answer.style.maxHeight = "50rem"
+
+                        p.style.opacity = "1"
+                    }, 1)
+                }    
+        })
+    })

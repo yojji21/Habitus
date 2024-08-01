@@ -6,7 +6,9 @@
 /* === Variables === */
 
 :root{
+    --orange-light-color: #ffd8bb;
     --orange-color: #f48434;
+    --orange-medium-color: #e77e32; 
     --orange-dark-color: #bb6325;
     --grey-color: #c0c0c0;
     --background-color: rgb(255, 255, 255);
@@ -280,7 +282,7 @@ header .content ul li svg{
 .banner{ 
     position: relative;
     top: 0rem;
-    min-height: 90vh;
+    min-height: 70vh;
     background-color: rgb(0, 0, 0);
     background-image: url("images/banner\ image.png");
     background-position: center;
@@ -396,7 +398,7 @@ header .content ul li svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 160rem;
+    width: 100vw;
 }
 
 .modalities h1{
@@ -818,4 +820,190 @@ header .content ul li svg{
 }
 
 /* === Doubts === */
+
+.doubts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 1100rem;
+    margin-block: 12rem;
+    background-color: var(--background-color);
+}
+
+.doubts .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.doubts .content h1{
+    font-size: 10rem;
+    font-family: kanit;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.doubts .content span{
+    font-size: 10rem;
+    font-family: kanit;
+    color: var(--orange-color);
+    text-align: center;
+}
+
+.doubts .content .doubts_box{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+    padding-block: 10rem;
+}
+
+.doubts .content .doubts_box .doubt .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--orange-color);
+    padding: 3rem;
+    padding-inline: 4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.doubts .content .doubts_box .doubt .question:hover{
+    background-color: var(--orange-medium-color);
+}
+.doubts .content .doubts_box .doubt .question h1{
+    font-size: 4rem;
+    font-family: raleway, sans-serif;
+    color: white;
+}
+
+.doubts .content .doubts_box .doubt .question button{
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doubts .content .doubts_box .doubt .question button span{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doubts .content .doubts_box .doubt .question button ion-icon{
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    transition: all linear 0.1s;
+}
+
+.doubts .content .doubts_box .doubt .question button ion-icon:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1100px){
+    .doubts .content .doubts_box .doubt .question h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .doubts .content h1{
+        font-size: 8rem;
+    }
+
+    .doubts .content span{
+        font-size: 8rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .doubts{
+        margin-block: 7rem;
+    }
+
+    .doubts .content h1{
+        font-size: 6.5rem;
+    }
+
+    .doubts .content span{
+        font-size: 6.5rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question h1{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .doubts .content h1{
+        font-size: 5rem;
+    }
+
+    .doubts .content span{
+        font-size: 5rem;
+    }
+
+    .doubts .content .doubts_box{
+        padding-block: 8rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question h1{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .doubts .content .doubts_box .doubt .question button span{
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* Answer Box */
+
+.doubts .content .doubts_box .doubt .answer_box{
+    max-height: 0rem;
+    max-width: 100%;
+    background-color: var(--orange-light-color);
+    padding: 0rem;
+    padding-inline: 4rem;
+    border-radius: 1rem;
+    display: none;
+    transition: 0.3s;
+}
+
+.doubts .content .doubts_box .doubt .answer_box p{
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--black-color);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1100px){
+    .doubts .content .doubts_box .doubt .answer_box p{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .doubts .content .doubts_box .doubt .answer_box p{
+        font-size: 2rem;
+    }
+}
 
