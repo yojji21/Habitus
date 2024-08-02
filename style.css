@@ -982,10 +982,6 @@ header .content ul li svg{
     transition: all linear 0.1s;
 }
 
-.doubts .content .doubts_box .doubt .question button ion-icon:hover{
-    transform: scale(1.2);
-}
-
 @media screen and (max-width: 1100px){
 
     .doubts .content h1{
@@ -1268,7 +1264,7 @@ header .content ul li svg{
 
 .contact .content .options{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     border-radius: 2rem;
     flex-wrap: wrap;
 }
@@ -1428,6 +1424,14 @@ header .content ul li svg{
     color: white;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.contact .content .options .whatsapp ul li a:hover{
+    color: #ccc;
+}
+
+.contact .content .options .whatsapp ul li a:hover span{
+    color: var(--orange-dark-color);
 }
 
 .contact .content .options .whatsapp ul li a span{
