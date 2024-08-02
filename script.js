@@ -78,11 +78,11 @@ cardAll.forEach(card => {
     })
 })
 
+// Menu Button Scripts
+
 const lowerMenu = document.querySelector(".lowerMenu")
 const menuBtn = document.querySelector(".menuBtn")
 const menu = document.querySelector(".menu")
-
-// Menu Button Scripts
 
 menuBtn.addEventListener("click", () => {
 
@@ -91,22 +91,36 @@ menuBtn.addEventListener("click", () => {
         const list = document.querySelector("#list")
 
         if(menu.style.display === "flex"){
-            menuBtn.innerHTML = `
-            <span><ion-icon name="menu-outline"></ion-icon></span>
-            `
-            menu.style.display = "none"
-            logoBtn.style.display = "flex"
-        } else {
-            menuBtn.innerHTML = `
-            <span><ion-icon name="close-outline"></ion-icon></span>
-            `
-            menu.style.display = "flex"
-            menu.style.padding = "4rem"
-            menu.style.minWidth = "100vw"
-            menu.style.minHeight = "100vh"
 
-            list.style.display = "flex"
-            logoBtn.style.display = "none"
+            function menuClose(){
+                menuBtn.innerHTML = `
+                <span><ion-icon name="menu-outline"></ion-icon></span>
+                `
+                menu.style.display = "none"
+                logoBtn.style.display = "flex"
+            }
+
+            menuClose()
+
+        } else {
+
+            function menuOpen(){
+                menuBtn.innerHTML = `
+                <span><ion-icon name="close-outline"></ion-icon></span>
+                `
+                const icon = menuBtn.querySelector("span ion-icon")
+                icon.style.color = "white"
+
+                menu.style.display = "flex"
+                menu.style.padding = "4rem"
+                menu.style.minWidth = "100vw"
+                menu.style.minHeight = "100vh"
+
+                list.style.display = "flex"
+                logoBtn.style.display = "none"
+            }
+
+            menuOpen()
     }
 })
 
