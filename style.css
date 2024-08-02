@@ -895,7 +895,7 @@ header .content ul li svg{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    transform: scale(0.);
+    transform: scale(0.6);
 }
 
 .doubts .content h1{
