@@ -311,6 +311,7 @@ header .content ul li svg{
     justify-content: center;
     align-items: center;
     gap: 8rem;
+    transform: scale(0.8);
 }
 
 .banner .content .text{
@@ -404,14 +405,14 @@ header .content ul li svg{
 
 .modalities h1{
     color: var(--black-color);
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-family: kanit;
     font-style: italic;
 }
 
 .modalities h2{
     color: var(--orange-color);
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-family: kanit;
     font-style: italic;
     margin-bottom: 10rem;
@@ -735,6 +736,7 @@ header .content ul li svg{
     background-position: center;
     background-size: cover;
     overflow-y: auto;
+    box-shadow: 0em 1em 3em rgba(0, 0, 0, 0.397);
 }
 
 .units .content{
@@ -746,17 +748,18 @@ header .content ul li svg{
     background-color: none;
     display: flex;
     flex-direction: column;
+    transform: scale(0.8);
 }
 .units_text{
     width: 100vw;
-    padding: 10rem;
+    padding: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--orange-color);
 }
 .units_text h1{
-    font-size: 10rem;
+    font-size: 8rem;
     font-family: kanit;
     color: white;
 }
@@ -814,7 +817,7 @@ header .content ul li svg{
 .units_text ion-icon{
     position: relative;
     color: white;
-    font-size: 10rem;
+    font-size: 8rem;
     transition: ease-in-out 0.2s;
 }
 
@@ -892,6 +895,7 @@ header .content ul li svg{
     justify-content: center;
     align-items: center;
     width: 100vw;
+    transform: scale(0.8);
 }
 
 .doubts .content h1{
