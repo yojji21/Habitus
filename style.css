@@ -729,7 +729,7 @@ header .content ul li svg{
     position: relative;
     width: 100vw;
     max-height: 100vw;
-    min-height: 40vh;
+    min-height: 55vh;
     background-image: url(images/units\ background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -834,38 +834,34 @@ header .content ul li svg{
 }
 
 @media screen and (max-width:800px){
-    .units .content ion-icon{
+    .units_text ion-icon{
         display: none;
     }
 
-    .units .content .text h1{
+    .units_text h1{
         font-size: 7rem;
     }
 
-    .units .content .text h2{
+    .units_text h2{
         font-size: 7rem;
     }
 
-    .units .content .text h1::first-letter{
+    .units_text h1::first-letter{
         margin-left: 2rem;
     }
 
-    .units .content .text h2::first-letter{
+    .units_text h2::first-letter{
         margin-left: 0;
     }
 }
 
 @media screen and (max-width: 500px){
 
-    .units .text{
-        flex-direction: column;
+    .units_text{
+        padding: 5rem;
     }
 
     .units_text h1{
-        font-size: 6rem;
-    }
-
-    .units_text h2{
         font-size: 6rem;
     }
 
