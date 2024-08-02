@@ -424,7 +424,7 @@ header .content ul li svg{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap: 10rem;
+    gap: 8rem;
     margin-bottom: 30rem;
 }
 
@@ -451,6 +451,7 @@ header .content ul li svg{
     height: 43,7rem;
     text-align: center;
     transition: all linear 0.2s;
+    transform: scale(0.8);
 }
 
 .modalities .cards .card #descCard{
@@ -759,7 +760,7 @@ header .content ul li svg{
     background-color: var(--orange-color);
 }
 .units_text h1{
-    font-size: 8rem;
+    font-size: 7rem;
     font-family: kanit;
     color: white;
 }
@@ -817,7 +818,7 @@ header .content ul li svg{
 .units_text ion-icon{
     position: relative;
     color: white;
-    font-size: 8rem;
+    font-size: 7rem;
     transition: ease-in-out 0.2s;
 }
 
