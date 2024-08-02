@@ -158,7 +158,7 @@ a {
 header{
     position: fixed;
     width: 100vw;
-    height: 7rem;
+    height: 5rem;
     background-color: black;
     display: flex;
     padding-right: 3rem;
@@ -180,7 +180,7 @@ header .content ul{
 header .content ul li a{
     position: relative;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     display: flex;
     justify-content: center;
@@ -198,7 +198,7 @@ header .content ul li #contactBtn{
     color: var(--black-color);
     font-weight: bold;
     font-family: raleway;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     transition: all linear 0.2s;
 }
@@ -216,7 +216,7 @@ header .content ul li svg{
     background: white;
     left: 0rem;
     top: 0rem;
-    width: 20rem;
+    width: 14rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -227,7 +227,7 @@ header .content ul li svg{
     position: absolute;
     left: 3rem;
     top: 0rem;
-    width: 20rem;
+    width: 14rem;
     margin-top: 0.5rem;
 }
 
@@ -319,11 +319,11 @@ header .content ul li svg{
 
 .banner .content button{
     width: 90%;
-    height: 8rem;
+    height: 7rem;
     border: none;
     outline: none;
     background-color: var(--orange-color);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: Raleway;
     color: white;
@@ -341,7 +341,7 @@ header .content ul li svg{
 }
 
 .banner .content .text h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: var(--orange-color);
     z-index: 1000;
 }
@@ -391,7 +391,7 @@ header .content ul li svg{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 6rem;
     flex-direction: column;
 }
 
@@ -404,17 +404,17 @@ header .content ul li svg{
 
 .modalities h1{
     color: var(--black-color);
-    font-size: 6.5rem;
+    font-size: 4rem;
     font-family: kanit;
     font-style: italic;
 }
 
 .modalities h2{
     color: var(--orange-color);
-    font-size: 6.5rem;
+    font-size: 4rem;
     font-family: kanit;
     font-style: italic;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 }
 
 .modalities .cards{
@@ -424,7 +424,7 @@ header .content ul li svg{
     flex-wrap: wrap;
     width: 100%;
     gap: 6rem;
-    margin-bottom: 30rem;
+    margin-bottom: 10rem;
 }
 
 .modalities .cards .card:hover{
@@ -446,7 +446,7 @@ header .content ul li svg{
 
 .modalities .cards .card{
     position: relative;
-    width: 28rem;
+    width: 22rem;
     height: 43,7rem;
     text-align: center;
     transition: all linear 0.2s;
@@ -511,7 +511,7 @@ header .content ul li svg{
     top: 50%;
     transform: translate(-50%, -50%);
     width: 5rem;
-    max-height: 0rem;
+    max-height: 65rem;
     background-color: var(--black-color);
     padding: 5rem;
     border-radius: 3rem;
@@ -525,7 +525,7 @@ header .content ul li svg{
 
 .desc_box h1{
     color: white;
-    max-width: 40rem;
+    max-width: 35rem;
     transition: opacity 0.3s;
     opacity: 0;
 }
@@ -566,28 +566,6 @@ header .content ul li svg{
     background-color: var(--orange-dark-color);
 }
 @media screen and (max-width: 1600px){
-
-    .modalities{
-        margin-top: 9rem;
-    }
-
-    .modalities h1{
-        font-size: 5rem;
-    }
-
-    .modalities h2{
-        font-size: 5rem;
-        margin-bottom: 9rem;
-    }
-
-    .modalities .cards{
-        gap: 5rem;
-        margin-bottom: 17rem;
-    }
-
-    .modalities .cards .card{
-        width: 23rem;
-    }
 
     .modalities .cards .card p{
         font-size: 1.5rem;
