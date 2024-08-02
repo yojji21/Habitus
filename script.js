@@ -126,9 +126,9 @@ menuBtn.addEventListener("click", () => {
 
 // Doubts Scripts
 
-    const allDoubts = document.querySelectorAll(".doubt")
+const allDoubts = document.querySelectorAll(".doubt")
 
-    allDoubts.forEach(doubt => {
+allDoubts.forEach(doubt => {
 
         const question = doubt.querySelector(".question")
 
@@ -164,4 +164,8 @@ menuBtn.addEventListener("click", () => {
                     }, 1)
                 }    
         })
-    })
+})
+
+//AOS
+
+AOS.init();

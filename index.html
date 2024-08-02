@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalabe=no">
     <title>Habitus Academia</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <li><a href="#units">Unidades<ion-icon name="map"></ion-icon></a></li>
                 <li><a href="#doubts">Dúvidas<ion-icon name="help-outline"></ion-icon></a></li>
                 <li>
-                    <a id="contactBtn" href="#">Contato<ion-icon name="chatbox"></ion-icon></ion-icon></a>
+                    <a id="contactBtn" href="#contact">Contato<ion-icon name="chatbox"></ion-icon></ion-icon></a>
                 </li>
             </ul>
         </div>
@@ -31,7 +32,7 @@
                     <li><a href="#units">Unidades</a></li>
                     <li><a href="#doubts">Dúvidas</a></li>
                     <li>
-                        <a id="contactBtn" href="#">Contato<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,5A1,1,0,0,1,4,4H20a1,1,0,0,1,1,1V15a1,1,0,0,1-1,1H18v4l-5-4H4a1,1,0,0,1-1-1Z"/></svg></a>
+                        <a id="contactBtn" href="#contact">Contato<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,5A1,1,0,0,1,4,4H20a1,1,0,0,1,1,1V15a1,1,0,0,1-1,1H18v4l-5-4H4a1,1,0,0,1-1-1Z"/></svg></a>
                     </li>
                 </ul>
             </div>
@@ -44,35 +45,35 @@
                     <h1>Corpo saudável, corpo em destaque!</h1>
                     <h1>Mas não se esqueça, <a href="">#vemprahabitus</a></h1>
                 </div>
-                <button>Matricule-se!</button>
+                <button><a href="#contact">Matricule-se</a></button>
             </div>
     </section>
     <section id="modalities" class="modalities">
         <div class="content">
             <h1>NOSSAS</h1><h2>MODALIDADES</h2>
             <div class="cards">
-            <div class="card" id="card1">
+            <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="600" class="card" id="card1">
                 <img src="images/Musculation image.jpg" alt="Card para apresentação da musculação">
                 <div class="black_filter"></div>
                 <h1>Treino de Musculação</h1>
                 <p>Ver Mais</p>
                 <p id="descCard">Musculação é uma prática de exercícios físicos que utiliza pesos e equipamentos específicos para fortalecer e desenvolver a musculatura. Envolve séries e repetições de movimentos controlados, visando aumentar a força, resistência e hipertrofia muscular.</p>
             </div>
-            <div class="card" id="card2">
+            <div data-aos="fade-right" data-aos-delay="150" data-aos-duration="600" class="card" id="card2">
                 <img src="images/Spinnig Class.jpg" alt="Card para apresentação do Spinning">
                 <div class="black_filter"></div>
                 <h1>Aulas de Spinning</h1>
                 <p>Ver Mais</p>
                 <p id="descCard">O spinning é uma modalidade de exercício aeróbico realizada em bicicletas estacionárias, frequentemente em grupo e acompanhada por música motivacional. É eficaz para melhorar a resistência cardiovascular, queimar calorias e fortalecer os músculos das pernas.</p>
             </div>
-            <div class="card" id="card3">
+            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="600" class="card" id="card3">
                 <img src="images/Fitdance Class.jpg" alt="Card para apresentação do FitDance">
                 <div class="black_filter"></div>
                 <h1>Dança FitDance</h1>
                 <p>Ver Mais</p>
                 <p id="descCard">FitDance é uma modalidade de dança fitness que combina diversos estilos musicais e coreografias dinâmicas para proporcionar um treino divertido e eficaz. As aulas são realizadas em grupo, seguindo a orientação de um instrutor, promovendo a queima de calorias, a melhora da coordenação motora e o bem-estar geral.</p>
             </div>
-            <div class="card" id="card4">
+            <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="600" class="card" id="card4">
                 <img src="images/Muchmore image.jpg" alt="Card que apresenta mais coisas">
                 <div class="black_filter"></div>
                 <h1>E MUITO MAIS!</h1>
@@ -88,58 +89,58 @@
     </div>
     <section class="units" id="units">
         <div class="content">
-            <div class="subtext">
-                <h2>11 Unidades, a mesma qualidade e respeito por nossos clientes.</h2>
+            <div data-aos="zoom" data-aos-delay="200" class="subtext">
+                <h2>10 Unidades, a mesma qualidade e respeito por nossos clientes.</h2>
                 <h2>Venha nos conhecer!</h2>
             </div>
             <div class="locates">
                 <ul>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         <h1>UNIDADE AMÉRICO BRASILIENSE</h1>
                         <p>Rua Capitão Alberto Mendes Jr., 356 - Américo Brasiliense - SP</p>
                         <p>SEG A SEX: 6H ÀS 22H  |  SÁBADO: 9H ÃS 15H  |  DOMINGO E FERIADO: Fechado</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <h1>UNIDADE 7 DE SETEMBRO  ARARARAQUARA</h1>
                         <p>Av. 7 de Setembro, 1142 - Jardim do Carmo, Araraquara - SP</p>
                         <p>SEG A SEX: 6H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 8H ÀS 12H</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         <h1>UNIDADE MAURICIO GALLI  ARARAQUARA</h1>
                         <p>Av. Dr. Afranio Peixoto, 475 - Jardim Adalgisa, Araraquara - SP</p>
                         <p>SEG A SEX: 5H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 8H ÀS 12H</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <h1>UNIDADE VAZ FILHO  ARARAQUARA</h1>
                         <p>Av. Dr. Antônio Tavares Pereira Lima, 2085 - Vila Xavier, Araraquara - SP</p>
                         <p>SEG A SEX: 5:30H ÀS 22H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: Fechado</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         <h1>UNIDADE BALDAN  MATÃO</h1>
                         <p>Av. Baldan, 3152 - Nova Matão, Matão - SP</p>
                         <p>SEG A SEX: 5H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 08H ÀS 12H</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <h1>UNIDADE BOSQUE  MATÃO</h1>
                         <p>Av. Francisco Mastropietro, 2822 - Jardim Popular, Matão - SP</p>
                         <p>SEG A SEX: 5H ÀS 22H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: Fechado</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         <h1>UNIDADE PEREIRA  MATÃO</h1>
                         <p>R. Sinharinha Frota, 257 - Jardim Pereira, Bauru - SP</p>
                         <p>SEG A SEX: 5H ÀS 22H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: Fechado</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <h1>UNIDADE BAURU</h1>
                         <p>R. Salvador Filardi, 2-50 - Vila Souto, Bauru - SP</p>
                         <p>SEG A SEX: 6H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 8H ÀS 12H</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         <h1>UNIDADE RIBEIRÃO PRETO</h1>
                         <p>R. Américo Brasiliense, 730 - Centro, Ribeirão Preto - SP</p>
                         <p>SEG A SEX: 5H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 8H ÀS 12H</p>
                     </li>
-                    <li>
+                    <li data-aos="fade-left" data-aos-delay="100">
                         <h1>UNIDADE SÃO CARLOS</h1>
                         <p>Av. Getúlio Vargas, 0000 - ao lado 1505 - Recreio São Judas Tadeu, São Carlos - SP</p>
                         <p>SEG A SEX: 5H ÀS 00H  |  SÁBADO: 8H ÃS 15H  |  DOMINGO E FERIADO: 8H ÀS 12H</p>
@@ -152,7 +153,7 @@
         <div class="content">
             <h1>DÚVIDAS <span>FREQUENTES</span></h1>
             <div class="doubts_box">
-                <div class="doubt">
+                <div data-aos="fade-right" data-aos-delay="100" class="doubt">
                     <div class="question">
                         <h1>Quais são os planos disponíveis?</h1>
                         <button id="expandButton"><ion-icon name="caret-back-outline"></ion-icon></button>
@@ -165,7 +166,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="doubt">
+                <div data-aos="fade-right" data-aos-delay="100" class="doubt">
                     <div class="question">
                         <h1>Tem professores que possam ajudar se caso necessário?</h1>
                         <button id="expandButton"><ion-icon name="caret-back-outline"></ion-icon></button>
@@ -174,7 +175,7 @@
                         <p>A academia Habitus possui os melhores professores, sempre dispostos a auxiliar o nosso cliente em qualquer exercício, dificuldade ou dúvida.</p>
                     </div>
                 </div>
-                <div class="doubt">
+                <div data-aos="fade-right" data-aos-delay="100" class="doubt">
                     <div class="question">
                         <h1>Tem aula experimental grátis?</h1>
                         <button id="expandButton"><ion-icon name="caret-back-outline"></ion-icon></button>
@@ -183,7 +184,7 @@
                         <p>Claro! Oferecemos à todos os nossos clientes na sua primeira vez uma aula grátis com auxílio de um professor para ensinar o que for necessário</p>
                     </div>
                 </div>
-                <div class="doubt">
+                <div data-aos="fade-right" data-aos-delay="100" class="doubt">
                     <div class="question">
                         <h1>Por que devo escolher a Habitus?</h1>
                         <button id="expandButton"><ion-icon name="caret-back-outline"></ion-icon></button>
@@ -195,6 +196,60 @@
             </div>
         </div>
     </section>
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="text">
+                <h1>Entre em <span>contato.</span> <br> Venha ser um de nossos <span>alunos.</span></h1>
+                <a href="https://www.instagram.com/habitusacademia/"><h1 class="socialMedia"><span><ion-icon id="instagram" name="logo-instagram"></ion-icon></span> Instagram</h1></a>
+                <a href="https://www.facebook.com/academiahabitus"><h1 class="socialMedia"><span><ion-icon id="facebook" name="logo-facebook"></ion-icon></span> Facebook</h1></a>
+                <h1 id="links">Links<ion-icon name="code-outline"></ion-icon></h1>
+                <ul>
+                    <li><a href="#banner">Home<ion-icon name="home"></ion-icon></a></li>
+                    <li><a href="#modalities">Modalidades<ion-icon name="accessibility"></ion-icon></a></li>
+                    <li><a href="#units">Unidades<ion-icon name="map"></ion-icon></a></li>
+                    <li><a href="#doubts">Dúvidas<ion-icon name="help-outline"></ion-icon></a></li>
+                    <li>
+                        <a id="contactBtn" href="#contact">Contato<ion-icon name="chatbox"></ion-icon></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="options">
+                <div class="whatsapp">
+                    <h1>WHATSAPP<span><ion-icon name="logo-whatsapp"></ion-icon></span></h1>
+                    <ul>
+                        <li><a href="https://wa.me/5516997875786">Matriz | <span>Américo Brasiliense</span></a></li>
+                        <li><a href="https://wa.me/5516997477274">Maurício Galli | <span>Araraquara</span></a></li>
+                        <li><a href="https://wa.me/5516997111642">7 de Setembro | <span>Araraquara</span></a></li>
+                        <li><a href="https://wa.me/5516997629495">Vaz Filho | <span>Araraquara</span></a></li>
+                        <li><a href="https://wa.me/5516997540197">Avendida Baldan | <span>Matão</span></a></li>
+                        <li><a href="https://wa.me/5516996178569">Bosque | <span>Matão</span></a></li>
+                        <li><a href="https://wa.me/5516997447407">Vila Pereira | <span>Matão</span></a></li>
+                        <li><a href="https://wa.me/5514997281501">Unidade <span>Bauru</span></a></li>
+                        <li><a href="https://wa.me/5516996365642">Unidade <span>Ribeirão Preto</span></a></li>
+                        <li><a href="https://wa.me/5516997654666">Unidade <span>São Carlos</span></a></li>
+                    </ul>
+                </div>
+                <div class="message">
+                    <h1>MENSAGEM<span><ion-icon name="chatbubbles"></ion-icon></span></h1>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+
+                        <input type="hidden" name="accessKey" value="5a699de2-9b6c-4196-8f27-29552b860d1b">
+
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" maxlength="70" required autocomplete="off">
+                        <label for="email" id="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu E-mail" maxlength="80" required autocomplete="off">
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="msg" maxlength="380" placeholder="Digite sua mensagem" required></textarea>
+                        <button id="submitButton" type="submit">Enviar</button>
+
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/thanks.html">
+
+                    </form>
+                </div>
+            </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>

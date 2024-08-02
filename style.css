@@ -6,13 +6,15 @@
 /* === Variables === */
 
 :root{
-    --orange-light-color: #ffd8bb;
+    --orange-light-color: #ffefe3;
     --orange-color: #f48434;
     --orange-medium-color: #e77e32; 
     --orange-dark-color: #bb6325;
     --grey-color: #c0c0c0;
     --background-color: rgb(255, 255, 255);
     --black-color: rgb(17, 18, 24);
+    --light-black-color: rgb(29, 31, 41);
+    --black-grey-color: rgb(40, 43, 58);
 }
 
 /* === General Styles === */
@@ -199,6 +201,7 @@ header .content ul li #contactBtn{
     font-weight: bold;
     font-family: raleway;
     padding: 0.5rem;
+    padding-inline: 1rem;
     border-radius: 1rem;
     transition: all linear 0.2s;
 }
@@ -283,7 +286,7 @@ header .content ul li svg{
 .banner{ 
     position: relative;
     top: 0rem;
-    min-height: 60vh;
+    min-height: 80vh;
     background-color: rgb(0, 0, 0);
     background-image: url("images/banner\ image.png");
     background-position: center;
@@ -333,6 +336,10 @@ header .content ul li svg{
     z-index: 1000;
 }
 
+.banner .content button a{
+    color: white;
+}
+
 .banner .content button:hover{
     cursor: pointer;
     transform: translateY(-1rem);
@@ -367,6 +374,11 @@ header .content ul li svg{
 }
 
 @media screen and (max-width:550px){
+
+    .banner{
+        min-height: 80vh;
+    }
+
     .banner .content .text h1{
         font-size: 4rem;
     }
@@ -1093,5 +1105,365 @@ header .content ul li svg{
 
     .doubts .content .doubts_box .doubt .answer_box p{
         font-size: 1rem;
+    }
+}
+
+/* === Contact === */
+
+.contact{
+    background: var(--black-color);
+    padding: 10rem;
+}
+
+.contact .content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact .content .text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
+    font-family: kanit;
+    color: white;
+    background-color: var(--light-black-color);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.contact .content .text h1{
+    font-size: 2.5rem;
+    font-family: kanit;
+}
+
+.contact .content .text a{
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.contact .content .text a:hover{
+    color: #ccc;
+}
+
+.contact .content .text .socialMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .content .text .socialMedia span{
+    display: flex;
+    align-items: center;
+}
+
+.contact .content .text .socialMedia span ion-icon{
+    position: relative;
+    top: 0.1rem;
+}
+
+.contact .content .text a h1 span #instagram{
+    color: rgb(255, 116, 202);
+}
+
+.contact .content .text a h1 span #facebook{
+    color: rgb(121, 190, 255);
+}
+
+.contact .content .text #links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .content .text #links ion-icon{
+    position: relative;
+    color: var(--orange-color);
+    top: 0.2rem;
+}
+
+.contact .content .text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .content .text ul li a{
+    font-size: 2rem;
+}
+
+.contact .content .text ul li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: kanit;
+}
+
+.contact .content .text ul li a ion-icon{
+    color: var(--orange-color);
+}
+
+
+.contact .content .text span{
+    font-family: kanit;
+    color: var(--orange-color);
+}
+
+@media screen and (max-width: 1100px){
+    .contact .content .text{
+        width: 100vw; 
+        justify-content: flex-start;
+    }
+
+    .contact .content .text h1{
+        font-size: 2rem;
+    }
+
+    .contact .content{
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .contact .content .text{
+        padding: 2rem;
+    }
+
+    .contact .content .text ul li a{
+        font-size: 1rem;
+    }
+
+    .contact .content .text h1{
+        font-size: 1.5rem;
+    }
+
+    .contact{
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contact{
+        padding: 5rem;
+    }
+}
+
+/* Options */
+
+.contact .content .options{
+    display: flex;
+    gap: 2rem;
+    border-radius: 2rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px){
+    .contact .content .options{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Message */
+
+.contact .content .options .message{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--light-black-color);
+    max-height: 30vh;
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 100%;
+    padding-block: 3rem;
+}
+
+.contact .content .options .message h1{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: kanit;
+    gap: 1rem;
+}
+
+.contact .content .options .message form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .content .options .message label{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact .content .options .message input{
+    font-size: 1.1rem;
+    width: 30vw;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--light-black-color);
+    color: white;
+}
+
+.contact .content .options .message #submitButton{
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: 2.5vh;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.contact .content .options .message #submitButton:hover{
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    background-color: #ff832a;
+    box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.26);
+}
+
+.contact .content .options .message #submitButton:disabled{
+    background-color: grey;
+}
+
+.contact .content .options .message textarea{
+    font-size: 1.1rem;
+    height: 5rem;
+    max-height: 6rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--light-black-color);
+    color: white;
+    resize: none;
+}
+
+@media screen and (max-width: 500px){
+    .contact .content .options .message h1{
+        font-size: 1.5rem;
+    }
+    
+    .contact .content .options .message label{
+        font-size: 1rem;
+    }
+    
+    .contact .content .options .message input{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contact .content .options .message h1{
+        font-size: 1rem;
+    }
+    
+    .contact .content .options .message label{
+        font-size: 1rem;
+    }
+    
+    .contact .content .options .message input{
+        font-size: 1rem;
+    }
+}
+
+/* Whatsapp */
+
+.contact .content .options .whatsapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-height: 30vh;
+    background-color: var(--light-black-color);
+    border-radius: 2rem;
+    padding: 3rem;
+    width: 100%;
+}
+
+.contact .content .options .whatsapp h1{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-family: kanit;
+    gap: 1rem;
+}
+
+.contact .content .options .whatsapp ion-icon{
+    color: 	#25D366;
+    display: flex;
+    align-items: center;
+}
+
+.contact .content .options .whatsapp ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .content .options .whatsapp ul li a{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contact .content .options .whatsapp ul li a span{
+    color: var(--orange-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1100px){
+    .contact .content .options .whatsapp ul li a{
+        font-size: 1.2rem;
+    }
+    
+    .contact .content .options .whatsapp ul li a span{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact .content .options .whatsapp h1{
+        font-size: 1.5rem;
+    }
+    
+    .contact .content .options .whatsapp ul li a{
+        font-size: 1rem;
+    }
+    
+    .contact .content .options .whatsapp ul li a span{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .contact .content .options .whatsapp h1{
+        font-size: 1.5rem;
+    }
+    
+    .contact .content .options .whatsapp ul li a{
+        font-size: 0.9rem;
+    }
+    
+    .contact .content .options .whatsapp ul li a span{
+        font-size: 0.9rem;
     }
 }
