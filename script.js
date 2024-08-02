@@ -35,8 +35,9 @@ cardAll.forEach(card => {
         }
       
         setTimeout(() => {
-            descBox.style.width = "80rem"
-            descBox.style.height = "70rem"
+            descBox.style.width = "60rem"
+            descBox.style.maxHeight = "75rem"
+            descBox.style.height = descBox.style.maxHeight
             descBox.style.opacity = "1"
         }, 1)
 
@@ -62,8 +63,9 @@ cardAll.forEach(card => {
 
         exitButton.addEventListener("click", () => {
 
-            descBox.style.width = "5rem"
-            descBox.style.height = "5rem"
+            descBox.style.width = "0rem"
+            descBox.style.height = descBox.style.maxHeight
+            descBox.style.maxHeight = "0rem"
             descBox.style.opacity = "0"
 
             title.style.display = "none"

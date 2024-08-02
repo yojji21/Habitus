@@ -311,7 +311,6 @@ header .content ul li svg{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    transform: scale(0.6);
 }
 
 .banner .content .text{
@@ -319,8 +318,8 @@ header .content ul li svg{
 }
 
 .banner .content button{
-    width: 80%;
-    height: 10rem;
+    width: 90%;
+    height: 8rem;
     border: none;
     outline: none;
     background-color: var(--orange-color);
@@ -342,7 +341,7 @@ header .content ul li svg{
 }
 
 .banner .content .text h1{
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--orange-color);
     z-index: 1000;
 }
@@ -357,7 +356,7 @@ header .content ul li svg{
     content: "";
     width: 0%;
     height: 0.5rem;
-    bottom: -1.5rem;
+    bottom: -1.1rem;
     background: white;
     z-index: 1000;
     transition: all ease-in-out 0.5s;
@@ -431,7 +430,6 @@ header .content ul li svg{
 .modalities .cards .card:hover{
     transform: translateY(-1rem);
     cursor: pointer;
-    transform: scale(0.8);
 }
 
 .modalities .cards .card:hover p{
@@ -448,11 +446,10 @@ header .content ul li svg{
 
 .modalities .cards .card{
     position: relative;
-    width: 32rem;
+    width: 28rem;
     height: 43,7rem;
     text-align: center;
     transition: all linear 0.2s;
-    transform: scale(0.8);
 }
 
 .modalities .cards .card #descCard{
@@ -482,7 +479,7 @@ header .content ul li svg{
     color: var(--orange-color);
     left: 50%;
     top: 50%;
-    font-size: 5rem;
+    font-size: 4rem;
     transform: translate(-50%, -50%);
 }
 
@@ -514,7 +511,7 @@ header .content ul li svg{
     top: 50%;
     transform: translate(-50%, -50%);
     width: 5rem;
-    height: 5rem;
+    max-height: 0rem;
     background-color: var(--black-color);
     padding: 5rem;
     border-radius: 3rem;
@@ -750,7 +747,6 @@ header .content ul li svg{
     background-color: none;
     display: flex;
     flex-direction: column;
-    transform: scale(0.6);
 }
 .units_text{
     width: 100vw;
@@ -775,7 +771,7 @@ header .content ul li svg{
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    margin-block: 13rem;
+    margin-block: 10rem;
 }
 
 .units .content .subtext h2{
@@ -793,11 +789,11 @@ header .content ul li svg{
     justify-content: space-evenly;
     align-items: center;
     gap: 10rem;
-    margin-bottom: 30rem;
+    margin-bottom: 15rem;
 }
 
 .units .content .locates li{
-    width: 47%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -807,7 +803,7 @@ header .content ul li svg{
 }
 
 .units .content .locates li h1{
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--orange-color);
 }
 
@@ -838,6 +834,24 @@ header .content ul li svg{
     }
 }
 
+@media screen and (max-width: 1100px){
+    .units .content .locates li h1{
+        font-size: 1.5rem;
+    }
+    
+    .units .content .locates li p{
+        font-size: 1.5rem;
+    }
+
+    .units .content .subtext{
+        margin-block: 6rem;
+    }
+
+    .units .content .subtext h2{
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:800px){
     .units_text ion-icon{
         display: none;
@@ -863,7 +877,7 @@ header .content ul li svg{
 @media screen and (max-width: 500px){
 
     .units_text{
-        padding: 5rem;
+        padding: 3rem;
     }
 
     .units_text h1{
@@ -874,8 +888,24 @@ header .content ul li svg{
         margin-left: 0;
     }
 
+    .units .content .subtext{
+        margin-block: 4rem;
+    }
+
+    .units .content .subtext h2{
+        font-size: 1.8rem;
+    }
+
     .units .content .locates ul{
-        gap: 7rem;
+        gap: 4rem;
+    }
+
+    .units .content .locates li h1{
+        font-size: 1.5rem;
+    }
+    
+    .units .content .locates li p{
+        font-size: 1.5rem;
     }
 }
 
@@ -887,7 +917,7 @@ header .content ul li svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-height: 1100rem;
+    max-height: 1500rem;
     margin-block: 12rem;
     background-color: var(--background-color);
 }
@@ -897,18 +927,17 @@ header .content ul li svg{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    transform: scale(0.6);
 }
 
 .doubts .content h1{
-    font-size: 10rem;
+    font-size: 6rem;
     font-family: kanit;
     color: var(--black-color);
     text-align: center;
 }
 
 .doubts .content span{
-    font-size: 10rem;
+    font-size: 6rem;
     font-family: kanit;
     color: var(--orange-color);
     text-align: center;
@@ -918,7 +947,7 @@ header .content ul li svg{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 100%;
+    width: 70%;
     height: 100%;
     padding-block: 10rem;
 }
@@ -928,7 +957,7 @@ header .content ul li svg{
     justify-content: space-between;
     align-items: center;
     background-color: var(--orange-color);
-    padding: 3rem;
+    padding: 2rem;
     padding-inline: 4rem;
     border-radius: 1rem;
     cursor: pointer;
@@ -939,7 +968,7 @@ header .content ul li svg{
     background-color: var(--orange-medium-color);
 }
 .doubts .content .doubts_box .doubt .question h1{
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: raleway, sans-serif;
     color: white;
 }
@@ -972,23 +1001,21 @@ header .content ul li svg{
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 1100px){
-    .doubts .content .doubts_box .doubt .question h1{
-        font-size: 3rem;
-    }
-}
-
 @media screen and (max-width: 800px){
     .doubts .content h1{
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .doubts .content span{
-        font-size: 8rem;
+        font-size: 6rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question {
+        padding: 1.5rem;
     }
 
     .doubts .content .doubts_box .doubt .question h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -999,15 +1026,37 @@ header .content ul li svg{
     }
 
     .doubts .content h1{
-        font-size: 6.5rem;
+        text-align: center;
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .doubts .content span{
-        font-size: 6.5rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .doubts .content .doubts_box{
+        padding-block: 4rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question{
+        padding: 1rem;
     }
 
     .doubts .content .doubts_box .doubt .question h1{
         text-align: left;
+        font-size: 1rem;
+    }
+    
+    .doubts .content .doubts_box .doubt .question button span{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .doubts .content .doubts_box .doubt .question button ion-icon{
+        font-size: 3rem;
     }
 }
 
@@ -1025,8 +1074,9 @@ header .content ul li svg{
     }
 
     .doubts .content .doubts_box .doubt .question h1{
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: left;
+        max-width: 80%;
     }
 
     .doubts .content .doubts_box .doubt .question button span{
@@ -1049,7 +1099,7 @@ header .content ul li svg{
 }
 
 .doubts .content .doubts_box .doubt .answer_box p{
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--black-color);
     opacity: 0;
@@ -1064,7 +1114,6 @@ header .content ul li svg{
 
 @media screen and (max-width: 800px){
     .doubts .content .doubts_box .doubt .answer_box p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
-
