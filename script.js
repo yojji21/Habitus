@@ -90,37 +90,36 @@ menuBtn.addEventListener("click", () => {
 
         const list = document.querySelector("#list")
 
-        if(menu.style.display === "flex"){
+        if(menu.style.visibility === "visible"){
 
-            function menuClose(){
                 menuBtn.innerHTML = `
                 <span><ion-icon name="menu-outline"></ion-icon></span>
                 `
-                menu.style.display = "none"
-                logoBtn.style.display = "flex"
-            }
+                menu.style.transform = "translateX(+62vw)"
+                list.style.display = "none"
 
-            menuClose()
+                setTimeout(() => {
+                    menu.style.visibility = "hidden"
+                }, 400)
+
 
         } else {
-
-            function menuOpen(){
+                
                 menuBtn.innerHTML = `
                 <span><ion-icon name="close-outline"></ion-icon></span>
                 `
                 const icon = menuBtn.querySelector("span ion-icon")
                 icon.style.color = "white"
 
-                menu.style.display = "flex"
-                menu.style.padding = "4rem"
-                menu.style.minWidth = "100vw"
-                menu.style.minHeight = "100vh"
-
+                menu.style.visibility = "visible"
                 list.style.display = "flex"
-                logoBtn.style.display = "none"
-            }
 
-            menuOpen()
+
+                setTimeout(() => {
+                    menu.style.transform = "translateX(-62vw)"
+                })
+    
+           
     }
 })
 

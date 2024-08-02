@@ -117,16 +117,18 @@ a {
 
 .menu{
     position: absolute;
-    display: none;
+    visibility: hidden;
     background-color: #f48434fa;
     top: 0rem;
-    right: 0rem;
-    min-width: 0vw;
-    min-height: 0vh;
-    padding: 0rem;
+    right: -62vw;
+    width: 60vw;
+    max-width: 60vw;
+    min-height: 100vh;
+    padding: 1rem;
     flex-direction: column;
     align-items: flex-start;
     box-shadow: 0em 0em 1em black;
+    transition: all ease 0.4s;
     gap: 1rem;
 }
 
@@ -797,11 +799,13 @@ header .content ul li svg{
 
 .units .content .locates li h1{
     font-size: 2rem;
+    font-weight: 600;
     color: var(--orange-color);
 }
 
 .units .content .locates li p{
     color: white;
+    font-weight: 600;
     font-size: 1.5rem;
 }
 
@@ -878,7 +882,7 @@ header .content ul li svg{
     }
 
     .units .content .subtext h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     .units .content .locates ul{
@@ -886,11 +890,11 @@ header .content ul li svg{
     }
 
     .units .content .locates li h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .units .content .locates li p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -1014,7 +1018,7 @@ header .content ul li svg{
     }
 
     .doubts .content .doubts_box .doubt .question h1{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -1026,19 +1030,19 @@ header .content ul li svg{
 
     .doubts .content h1{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
         display: flex;
         flex-direction: column;
     }
 
     .doubts .content span{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .doubts .content .doubts_box{
         padding-block: 4rem;
-        width: 65%;
+        width: 80%;
     }
 
     .doubts .content .doubts_box .doubt .question{
@@ -1047,16 +1051,16 @@ header .content ul li svg{
 
     .doubts .content .doubts_box .doubt .question h1{
         text-align: left;
-        font-size: 1rem;
+        font-size: 2.1rem;
     }
     
     .doubts .content .doubts_box .doubt .question button span{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .doubts .content .doubts_box .doubt .question button ion-icon{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 
@@ -1067,15 +1071,11 @@ header .content ul li svg{
     }
 
     .doubts .content .doubts_box .doubt .question h1{
-        font-size: 1rem;
+        font-size: 1.6rem;
         text-align: left;
         max-width: 80%;
     }
 
-    .doubts .content .doubts_box .doubt .question button span{
-        width: 3rem;
-        height: 3rem;
-    }
 }
 
 /* Answer Box */
@@ -1108,7 +1108,7 @@ header .content ul li svg{
 @media screen and (max-width: 500px){
 
     .doubts .content .doubts_box .doubt .answer_box p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -1242,11 +1242,11 @@ header .content ul li svg{
     }
 
     .contact .content .text ul li a{
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 
     .contact .content .text h1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .contact{
@@ -1358,31 +1358,42 @@ header .content ul li svg{
     resize: none;
 }
 
+@media screen and (max-width: 1100px){
+    .contact .content .options .message textarea{
+        height: 9rem;
+    }
+}
+
 @media screen and (max-width: 500px){
     .contact .content .options .message h1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     .contact .content .options .message label{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .contact .content .options .message input{
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .contact .content .options .message textarea{
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 400px){
     .contact .content .options .message h1{
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
     
     .contact .content .options .message label{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .contact .content .options .message input{
-        font-size: 1rem;
+        font-size: 1.3rem;
+        width: 50vw;
     }
 }
 
@@ -1452,29 +1463,29 @@ header .content ul li svg{
 
 @media screen and (max-width: 500px){
     .contact .content .options .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     
     .contact .content .options .whatsapp ul li a{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .contact .content .options .whatsapp ul li a span{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 400px){
 
     .contact .content .options .whatsapp h1{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
     .contact .content .options .whatsapp ul li a{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     
     .contact .content .options .whatsapp ul li a span{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
