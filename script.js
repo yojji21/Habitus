@@ -86,9 +86,47 @@ const menu = document.querySelector(".menu")
 
 menuBtn.addEventListener("click", () => {
 
-    const logoBtn = document.querySelector("#logoBtn")
-
         const list = document.querySelector("#list")
+
+        const li = list.querySelectorAll("li a")
+
+        li.forEach(item => {
+            item.addEventListener("click", () => {
+                if(menu.style.visibility === "visible"){
+
+                    menuBtn.innerHTML = `
+                    <span><ion-icon name="menu-outline"></ion-icon></span>
+                    `
+                    menu.style.transform = "translateX(+62vw)"
+                    list.style.display = "none"
+    
+                    setTimeout(() => {
+                        menu.style.visibility = "hidden"
+                    }, 400)
+    
+    
+            } else {
+                    
+                    menuBtn.innerHTML = `
+                    <span><ion-icon name="close-outline"></ion-icon></span>
+                    `
+                    const icon = menuBtn.querySelector("span ion-icon")
+                    icon.style.color = "white"
+    
+                    menu.style.visibility = "visible"
+                    list.style.display = "flex"
+    
+    
+                    setTimeout(() => {
+                        menu.style.transform = "translateX(-62vw)"
+                    })
+        
+               
+        }
+            })
+        })
+            
+        
 
         if(menu.style.visibility === "visible"){
 
