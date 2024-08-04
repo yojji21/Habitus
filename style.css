@@ -1220,7 +1220,7 @@ header .content ul li svg{
     color: var(--orange-color);
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1400px){
     .contact .content .text{
         width: 100vw; 
         justify-content: flex-start;
@@ -1269,7 +1269,7 @@ header .content ul li svg{
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1400px){
     .contact .content .options{
         width: 100%;
         justify-content: space-between;
