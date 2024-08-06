@@ -175,8 +175,9 @@ allDoubts.forEach(doubt => {
                 const p = answer.querySelector("p")
                 if(answer.style.display === "flex"){
                     button.innerHTML = `
-                    <span><ion-icon name="caret-back-outline"></ion-icon></span>
+                    <ion-icon name="caret-back-outline"></ion-icon>
                     `
+
                     setTimeout(() => {
                         answer.style.display = "none"
                     }, 300)
@@ -188,7 +189,7 @@ allDoubts.forEach(doubt => {
 
                 } else {
                     button.innerHTML = `
-                    <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                    <ion-icon name="caret-down-outline"></ion-icon>
                     `
 
                     answer.style.display = "flex"
@@ -196,7 +197,6 @@ allDoubts.forEach(doubt => {
                     setTimeout(() => {
                         answer.style.padding = "3rem"
                         answer.style.maxHeight = "50rem"
-
                         p.style.opacity = "1"
                     }, 1)
                 }    

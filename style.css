@@ -1081,7 +1081,7 @@ header .content ul li svg{
 /* Answer Box */
 
 .doubts .content .doubts_box .doubt .answer_box{
-    max-height: 0rem;
+    max-height: 50rem;
     max-width: 100%;
     background-color: var(--orange-light-color);
     padding: 0rem;
