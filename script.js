@@ -1,6 +1,5 @@
 
 const html = document.querySelector("html")
-
 const cardAll = document.querySelectorAll(".card")
 const cards = document.querySelector(".cards")
 const modalitiesSection = document.querySelector(".modalities")
@@ -201,6 +200,15 @@ allDoubts.forEach(doubt => {
                     }, 1)
                 }    
         })
+})
+
+// Registration Button
+
+const RegisBtn = document.querySelector("#regisButton")
+
+RegisBtn.addEventListener("click", () => {
+    var contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
 })
 
 //AOS

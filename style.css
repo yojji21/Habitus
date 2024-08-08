@@ -32,6 +32,7 @@
 
 html {
     font-size: 80%;
+    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 2000px){
@@ -54,6 +55,34 @@ body {
     max-width: 170rem;
     display: flex;
     margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--orange-color);
+    border-radius: 1rem;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--black-color);
+}
+  
+::-moz-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+  
+::-moz-scrollbar-thumb {
+    background-color: var(--black-color);
+    border-radius: 1rem;
+}
+  
+::-moz-scrollbar-track {
+    background-color: var(--orange-color);
 }
 
 @media screen and (max-width: 1600px){
@@ -336,10 +365,6 @@ header .content ul li svg{
     border-radius: 2rem;
     transition: all ease-in-out 0.5s;
     z-index: 1000;
-}
-
-.banner .content button a{
-    color: white;
 }
 
 .banner .content button:hover{
