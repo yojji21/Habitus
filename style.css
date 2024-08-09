@@ -47,6 +47,7 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     background: var(--background-color);
+    font-family: Raleway, kanit, Arial, sans-serif;
 }
 
 /* === Scrollbar Styles === */
@@ -949,6 +950,7 @@ header .content ul li svg{
     font-family: kanit;
     color: var(--black-color);
     text-align: center;
+    font-style: italic;
 }
 
 .doubts .content span{
@@ -986,6 +988,7 @@ header .content ul li svg{
     font-size: 2rem;
     font-family: raleway, sans-serif;
     color: white;
+    font-style: normal;
 }
 
 .doubts .content .doubts_box .doubt .question button{
