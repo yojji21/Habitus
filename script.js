@@ -211,6 +211,12 @@ RegisBtn.addEventListener("click", () => {
     contactSection.scrollIntoView({ behavior: 'smooth' });
 })
 
+// Logo Button
+
+document.querySelector("#logoBtn").addEventListener("click", () => {
+    location.reload()
+})
+
 //AOS
 
 AOS.init();
