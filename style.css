@@ -1386,6 +1386,12 @@ header .content ul li svg{
     resize: none;
 }
 
+@media screen and (max-width: 1400px){
+    .contact .content .options .message input{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1100px){
     .contact .content .options .message textarea{
         height: 9rem;
