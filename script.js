@@ -109,8 +109,6 @@ menuBtn.addEventListener("click", () => {
                     menuBtn.innerHTML = `
                     <span><ion-icon name="close-outline"></ion-icon></span>
                     `
-                    const icon = menuBtn.querySelector("span ion-icon")
-                    icon.style.color = "white"
     
                     menu.style.visibility = "visible"
                     list.style.display = "flex"
@@ -213,9 +211,21 @@ RegisBtn.addEventListener("click", () => {
 
 // Logo Button
 
-document.querySelector("#logoBtn").addEventListener("click", () => {
+document.querySelector(".logoBtn").addEventListener("click", () => {
     location.reload()
 })
+
+// Header Scripts
+
+window.addEventListener("scroll", () => {
+    if(window.innerWidth > 1100){
+        const header = document.querySelector("header")
+        const logo = document.querySelector(".logoBtn")
+        logo.classList.toggle("scroll", window.scrollY > 0)
+        header.classList.toggle("scroll", window.scrollY > 0)
+    }
+})
+  
 
 //AOS
 
