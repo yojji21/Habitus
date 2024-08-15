@@ -1102,6 +1102,12 @@ header .content ul li svg{
     }
 }
 
+@media screen and (max-width: 500px){
+    .doubts .content .doubts_box .doubt .question h1{
+        max-width: 27rem ;
+    }
+}
+
 @media screen and (max-width: 400px){
 
     .doubts .content .doubts_box{
