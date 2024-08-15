@@ -225,7 +225,6 @@ window.addEventListener("scroll", () => {
         header.classList.toggle("scroll", window.scrollY > 0)
     }
 })
-  
 
 //AOS
 
