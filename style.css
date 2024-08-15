@@ -1237,25 +1237,9 @@ header .content ul li svg{
     transition: all ease 0.4s;
 }
 
-.contact .content .text a h1:hover p{
-    transform: translateX(-1rem);
-    font-size: 1rem;
-    opacity: 0;
-}
-
-.contact .content .text a h1:hover span #instagram{
-    transform: translateX(+1rem);
-    scale: 1.6;
-}
-
 .contact .content .text a h1 span #facebook{
     color: rgb(121, 190, 255);
     transition: all ease 0.5s;
-}
-
-.contact .content .text a h1:hover span #facebook{
-    transform: translateX(+1rem);
-    scale: 1.6;
 }
 
 .contact .content .text #links{
@@ -1306,6 +1290,24 @@ header .content ul li svg{
     .contact .content{
         gap: 3.5rem;
     }
+}
+
+@media screen and (min-width: 800px){
+    .contact .content .text a h1:hover p{
+        transform: translateX(-1rem);
+        font-size: 1rem;
+        opacity: 0;
+    }
+    
+    .contact .content .text a h1:hover span #instagram{
+        transform: translateX(+1rem);
+        scale: 1.6;
+    }
+
+    .contact .content .text a h1:hover span #facebook{
+        transform: translateX(+1rem);
+        scale: 1.6;
+    }    
 }
 
 @media screen and (max-width: 650px){
