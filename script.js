@@ -113,10 +113,8 @@ menuBtn.addEventListener("click", () => {
                     menu.style.visibility = "visible"
                     list.style.display = "flex"
     
-    
-                    setTimeout(() => {
-                        menu.style.transform = "translateX(-62vw)"
-                    })
+                     menu.style.transform = "translateX(-62vw)"
+
         
                
         }
@@ -143,16 +141,9 @@ menuBtn.addEventListener("click", () => {
                 menuBtn.innerHTML = `
                 <span><ion-icon name="close-outline"></ion-icon></span>
                 `
-                const icon = menuBtn.querySelector("span ion-icon")
-                icon.style.color = "white"
-
+                menu.style.transform = "translateX(-62vw)"
                 menu.style.visibility = "visible"
                 list.style.display = "flex"
-
-
-                setTimeout(() => {
-                    menu.style.transform = "translateX(-62vw)"
-                })
     
            
     }
