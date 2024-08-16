@@ -1235,6 +1235,7 @@ header .content ul li svg{
 
 .contact .content .text a h1{
     padding-right: 3rem;
+    height: 4rem;
 }
 
 .contact .content .text a h1 p{
@@ -1305,12 +1306,12 @@ header .content ul li svg{
     }
     
     .contact .content .text a h1:hover span #instagram{
-        transform: translateX(+1rem);
+        transform: translateX(+2rem);
         scale: 1.6;
     }
 
     .contact .content .text a h1:hover span #facebook{
-        transform: translateX(+1rem);
+        transform: translateX(+2rem);
         scale: 1.6;
     }    
 }
