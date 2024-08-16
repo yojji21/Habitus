@@ -510,7 +510,7 @@ header .content ul li svg{
     width: 25rem;
     height: 43,7rem;
     text-align: center;
-    transition: all linear 0.2s;
+    transition: all ease 0.2s;
 }
 
 .modalities .cards .card #descCard{
@@ -532,7 +532,7 @@ header .content ul li svg{
     height: 100%;
     background: rgba(0, 0, 0, 0.616);
     border-radius: 1rem;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.4s;
 }
 
 .modalities .cards .card h1{
