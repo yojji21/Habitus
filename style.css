@@ -454,6 +454,7 @@ header .content ul li svg{
     align-items: center;
     margin-top: 10rem;
     flex-direction: column;
+    scroll-margin-top: 10rem;
 }
 
 .modalities .content{
